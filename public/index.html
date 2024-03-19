@@ -9,24 +9,45 @@
 </head>
 <body>
 <header>
-    <h1>AI Vaccine Hub Assistant</h1>
+    <h1>AI Demo: AI-Powered Chatbot</h1>
 </header>
 <main>
-    <h2>Welcome to the AI Vaccine Hub Assistant</h2>
-    <p>Our AI-powered assistant is here to help you with any questions or concerns you may have about vaccines.</p>
-    <p>Simply click on the chat bubble in the bottom-right corner to start a conversation with our assistant.</p>
+    <h2>Welcome to our AI-Powered Chatbot Demo!</h2>
+    <p>To get started, we have curated a selection of sample questions that align with our chatbot’s expertise: UJA-Federation of New York, New York's Jewish philanthropic go-to. </p>
+    <br>
+    <p>These prompts are meant to guide you through a seamless demonstration. </p>
+    <br>
+    <h3>PROMPTS</h3>
+    <br>
+    <p>What is the UJA-Federation of New York? </p>
+    <p>How does the UJA-Federation support the Jewish community in New York? </p>
+    <p>I’m interested in educational programs. What does the UJA-Federation offer? </p>
+    <p>Which other programs does UJA have to offer?</p>
+    <p>Is UJA hosting any galas in NYC? </p>
+    <p>Where is it taking place? </p>
+    <p>Can I still attend?? </p>
+    <p>How much grant funding did UJA raise in 2022?</p>
 </main>
-<
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
+        location="us-central1"
         project-id="astute-sign-407821"
-        agent-id="6b523607-8fa6-43a8-83cb-0afd4f9970a9"
-        language-code="en"
+        agent-id="af2835a4-fc4e-439d-b20a-049db4f74d66"
+        language-code="en-us"
         max-query-length="-1"
         allow-feedback="all">
     <df-messenger-chat-bubble
-            chat-title="AI Vaccine Hub Assistant">
+            chat-title="UJA Info Assistant">
     </df-messenger-chat-bubble>
 </df-messenger>
+<style>
+    df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+    }
+</style>
 </body>
 </html>
